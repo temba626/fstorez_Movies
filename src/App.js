@@ -24,3 +24,7 @@ const App = () => {
 			setMovies(responseJson.Search);
 		}
 	};
+
+  useEffect(() => {
+		getMovieRequest(searchValue);
+	}, [searchValue]);
